@@ -9,6 +9,7 @@ dependencies:
   - scipy
   - scikit-learn
   - matplotlib
+  - libstdcxx-ng  # Added to potentially address libstdc++ compatibility
   - pip:
     - wandb
     - torch==1.12.1
