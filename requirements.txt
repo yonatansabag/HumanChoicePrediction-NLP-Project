@@ -1,8 +1,15 @@
-pip:
-    wandb
-    torch==1.12.1
-    matplotlib
-    pandas
-    transformers
-    scipy
-    scikit-learn
+name: myprojectenv
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8  # Specify the version of Python you want to use
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pip:
+    - wandb
+    - torch==1.12.1
+    - transformers
