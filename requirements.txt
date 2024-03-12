@@ -1,4 +1,5 @@
-pip:
+dependencies:
+- pip:
     wandb
     torch==1.12.1
     matplotlib
