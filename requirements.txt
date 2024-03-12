@@ -1,3 +1,4 @@
+pip
 pip:
     wandb
     torch==1.12.1
