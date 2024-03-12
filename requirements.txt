@@ -1,8 +1,8 @@
 pip:
-    - wandb
-    - torch==1.12.1
-    - matplotlib
-    - pandas
-    - transformers
-    - scipy
-    - scikit-learn
+    wandb
+    torch==1.12.1
+    matplotlib
+    pandas
+    transformers
+    scipy
+    scikit-learn
