@@ -1,9 +1,9 @@
-pip
-pip:
-    wandb
-    torch==1.12.1
-    matplotlib
-    pandas
-    transformers
-    scipy
-    scikit-learn
+dependencies:
+- pip:
+    - wandb
+    - torch==1.12.1
+    - matplotlib
+    - pandas
+    - transformers
+    - scipy
+    - scikit-learn
