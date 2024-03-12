@@ -1,5 +1,5 @@
 # cloning your code from github:
-git clone https://github.com/eilamshapira/NLP_COURE_2024_PROJECT.git
+git clone https://github.com/eilamshapira/NLP_project.git
 
 # Your main sweep:
 python final_sweep_demo.py
