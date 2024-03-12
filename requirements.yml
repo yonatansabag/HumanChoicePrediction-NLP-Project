@@ -1,16 +1,14 @@
-name: myprojectenv
+name: final_project_env
 channels:
-  - conda-forge
-  - pytorch
   - defaults
 dependencies:
-  - python=3.8  # Specify the version of Python you want to use
-  - pandas
-  - scipy
-  - scikit-learn
-  - matplotlib
-  - libstdcxx-ng  # Added to potentially address libstdc++ compatibility
+  - python=3.8
+  - pip
   - pip:
     - wandb
     - torch==1.12.1
+    - matplotlib
+    - pandas
     - transformers
+    - scipy
+    - scikit-learn
