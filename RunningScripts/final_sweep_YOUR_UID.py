@@ -1,6 +1,6 @@
 import wandb
 YOUR_WANDB_USERNAME = "eilamshapira"
-project = "NLP2024_PROJECT_ID1_ID2"
+project = "NLP2024_PROJECT_YOUR_UID"
 
 command = [
         "${ENVIRONMENT_VARIABLE}",
@@ -11,7 +11,7 @@ command = [
     ]
 
 sweep_config = {
-    "name": "LSTM: SimFactor=0/4",
+    "name": "LSTM: SimFactor=0/4 for any features representation",
     "method": "grid",
     "metric": {
         "goal": "maximize",
@@ -22,6 +22,7 @@ sweep_config = {
         "architecture": {"values": ["LSTM"]},
         "seed": {"values": list(range(1, 6))},
         "online_simulation_factor": {"values": [0, 4]},
+        "features": {"values": ["EFs", "GPT4", "BERT"]},
     },
     "command": command
 }

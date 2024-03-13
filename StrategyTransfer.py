@@ -28,7 +28,7 @@ parser.add_argument('--strategies', default=None, help='Which strategies are inc
 parser.add_argument('--total_epochs', type=int, default=25, help='Number of epochs during training')
 
 # Input Features
-parser.add_argument('--features', type=str, default="GPT4", help='Input features')
+parser.add_argument('--features', type=str, default="EFs", help='Input features')
 
 # Architecture Features
 parser.add_argument('--architecture', type=str, default="LSTM", help='Model architecture')
