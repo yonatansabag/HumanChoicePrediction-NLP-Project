@@ -32,3 +32,10 @@ To install and run the code on your local machine, follow these steps:
     ```bash
     conda env create -f requirements.yml
     ```
+3. **Log in to Weights & Biases (W&B)**
+
+   Weights & Biases is a machine learning platform that helps you track your experiments, visualize data, and share your findings. Logging in to W&B is essential for tracking the experiments in this project. If you haven't already, you'll need to create a W&B account. 
+   Use the following command to log in to your account:
+    ```bash
+    wandb login
+    ```
