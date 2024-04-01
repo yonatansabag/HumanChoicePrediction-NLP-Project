@@ -119,10 +119,10 @@ def LLM_based(is_stochastic):
     if is_stochastic:
         def func(information):
             review_llm_score = proba2go[information["review_id"]]
-            return int(review_llm_score >= 0.5)
+            return int(np.random.rand() <= review_llm_score)
         return func
     else:
         def func(information):
             review_llm_score = proba2go[information["review_id"]]
-            return int(np.random.rand() <= review_llm_score)
+            return int(review_llm_score >= 0.5)
         return func
