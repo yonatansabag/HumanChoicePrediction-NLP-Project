@@ -39,16 +39,3 @@ To install and run the code on your local machine, follow these steps:
     ```bash
     wandb login
     ```
-
-## Citation
-
-If you find this work useful, please cite our paper:
-
-    @misc{shapira2024human,
-          title={Human Choice Prediction in Language-based Persuasion Games: Simulation-based Off-Policy Evaluation}, 
-          author={Eilam Shapira and Reut Apel and Moshe Tennenholtz and Roi Reichart},
-          year={2024},
-          eprint={2305.10361},
-          archivePrefix={arXiv},
-          primaryClass={cs.LG}
-    }
