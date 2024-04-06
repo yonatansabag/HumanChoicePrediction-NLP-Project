@@ -4,6 +4,13 @@
     <list>
       <list>
         <remote-mappings server-id="python@bd5f179e-049f-4a36-bf8a-736e35001309" />
+        <remote-mappings server-id="python@sftp://eilamshapira@nlp11.iem.technion.ac.il:22/data/home/eilamshapira/anaconda3/envs/conda_env/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="/" remote-root="/data/home/eilamshapira/GPT_BOT" />
+            </list>
+          </settings>
+        </remote-mappings>
       </list>
     </list>
   </component>
