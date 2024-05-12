@@ -232,6 +232,7 @@ class OnlineSimulationDataSet(Dataset):
                 negative_topics = np.random.choice(bad_topics, 3)
             elif favorite_topic_method == "review":
                 review_features = args['favorite_review']
+                review_features.index = review_features.index.map(lambda x: int(x))
                 positive_topics = review_features[(review_features > 0) & review_features.index.isin(good_topics)].index
                 positive_topics = np.array(positive_topics)
                 np.random.shuffle(positive_topics)
