@@ -250,6 +250,10 @@ class OnlineSimulationDataSet(Dataset):
                                                                                             quality_threshold)),
                             4: ("LLM stochastic (Language-based)",  basic_nature[3], user_strategies.LLM_based(is_stochastic=True)),
                             5: ("LLM deterministic", basic_nature[4], user_strategies.LLM_based(is_stochastic=False)),
+                            6: ("our_s1", basic_nature[5], user_strategies.cumulative_review_score_adjustment),
+                            7: ("our_s2", basic_nature[6], user_strategies.loss_aversion_decision_making),
+                            8: ("our_s3", basic_nature[7], user_strategies.sequential_consistency_decay),
+                            9: ("our_s4", basic_nature[8], user_strategies.contextual_reinforcement_exploration_exploitation)
                             }
             self.nature = np.random.rand(len(self.ACTIONS)) * np.array([v[1] for v in self.ACTIONS.values()])
             self.nature = self.nature / sum(self.nature)
